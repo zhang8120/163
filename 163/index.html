@@ -11,37 +11,17 @@
 <title></title>
 
 <link rel="stylesheet" href="css/jquery.fullPage.css">
-	<link rel="stylesheet" href="css/index.css">
-
-<style>
-
-
-</style>
-
-<script src="http://www.jq22.com/jquery/1.8.3/jquery.min.js"></script>
-
-<script src="http://libs.baidu.com/jqueryui/1.8.22/jquery-ui.min.js "></script>
-
-<script src="js/jquery.fullPage.min.js"></script>
-
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery.fullpage.js"></script>
+<script src="js/jquery.fullpage.min.js"></script>
 <script>
 
 $(function(){
-
-	if($.browser.msie && $.browser.version < 10){
-
-		$('body').addClass('ltie10');
-
-	}
-
-	$.fn.fullpage({
-
+	$("#fullpage").fullpage({
 		verticalCentered: false,
-
 		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9', 'page10'],
-
 		navigation: true,
-
 		navigationTooltips: ['首页', '视觉', '交互', '皮肤', '功能', '待办邮件', '联系人邮件', '科技', '连接易信', '马上体验']
 
 	});
@@ -53,7 +33,7 @@ $(function(){
 </head>
 
 <body>
-
+<div id="fullpage">
 <div class="section section1">
 
 	<div class="bg"><img src="images/section1.jpg" alt=""></div>
@@ -279,7 +259,7 @@ $(function(){
 	<a class="go" href="http://www.jq22.com/">马上体验</a>
 
 </div>
-
+</div>
 </body>
 
 </html>
